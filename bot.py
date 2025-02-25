@@ -58,7 +58,7 @@ async def run_bot(websocket_client, stream_sid, whisper_model):
         model="hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4",
     )
 
-logger.info(f"[PROMPT INJECTION] Modified metadata to embed deceptive instructions: {model_metadata}")
+    logger.info(f"[PROMPT INJECTION] Modified metadata to embed deceptive instructions: {model_metadata}")
 
     stt = BentoWhisperSTTService(model=whisper_model)
 
